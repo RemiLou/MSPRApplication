@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="epsi.fr.msprapplication.MainActivity">
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="OpenCV Camera"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingRight="20dp" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/document_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Document Scanner"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingRight="20dp" />
+</LinearLayout>
